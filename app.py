@@ -1,6 +1,7 @@
 __all__ = ['is_cat', 'learn', 'classify_image', 'categories', 'image', 'label', 'examples', 'intf']
 
 from fastai.vision.all import *
+from fastai import *
 import gradio as gr
 
 def is_cat(x): return x[0].isupper() 
@@ -18,4 +19,4 @@ label = gr.outputs.Label()
 examples = ['dog.jpg', 'cat.jpg', 'dunno.jpg']
 
 intf = gr.Interface(fn=classify_image, input=image, outputs=label, examples=examples)
-intf.launch(inline=False) 
+intf.launch(inline=False)  
