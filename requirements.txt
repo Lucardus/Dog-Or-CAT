@@ -1,2 +1,4 @@
 fastai
+fastprogress
+ipython
 gradio
