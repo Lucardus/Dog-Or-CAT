@@ -1,7 +1,6 @@
 __all__ = ['is_cat', 'learn', 'classify_image', 'categories', 'image', 'label', 'examples', 'intf']
 
-from fastai.vision.all import *
-from fastai import *
+from fastai.basics import *
 import gradio as gr
 
 def is_cat(x): return x[0].isupper() 
